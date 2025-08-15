@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen - Senior Python Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="python-logo">
+                    <div class="python-icon"></div>
+                </div>
+            </div>
+            <div class="loading-text">Loading Portfolio...</div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="particle-container" id="loading-particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-3d" id="navigation">
+        <div class="nav-brand">
+            <span class="nav-logo">AC</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+            <a href="#about" class="nav-link" data-section="about">About</a>
+            <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+            <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+            <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+            <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg">
+                <div class="code-rain" id="code-rain"></div>
+                <div class="particle-system" id="hero-particles"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-logo-container">
+                    <div class="python-logo-3d">
+                        <div class="python-snake"></div>
+                        <div class="python-text">Python</div>
+                    </div>
+                </div>
+                
+                <div class="hero-text">
+                    <h1 class="hero-name">
+                        <span class="name-char">A</span>
+                        <span class="name-char">l</span>
+                        <span class="name-char">e</span>
+                        <span class="name-char">x</span>
+                        <span class="name-char"> </span>
+                        <span class="name-char">C</span>
+                        <span class="name-char">h</span>
+                        <span class="name-char">e</span>
+                        <span class="name-char">n</span>
+                    </h1>
+                    <p class="hero-title">Senior Python Developer</p>
+                    <p class="hero-tagline typewriter" id="typewriter"></p>
+                </div>
+                
+                <div class="hero-shapes">
+                    <div class="shape-cube shape-1"></div>
+                    <div class="shape-sphere shape-2"></div>
+                    <div class="shape-pyramid shape-3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                
+                <div class="about-grid">
+                    <div class="about-card card-3d" data-tilt>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="avatar-container">
+                                    <div class="avatar-frame">
+                                        <div class="avatar-placeholder">AC</div>
+                                    </div>
+                                </div>
+                                <h3>Profile</h3>
+                                <p>Click to reveal</p>
+                            </div>
+                            <div class="card-back">
+                                <h3>Alex Chen</h3>
+                                <p>Passionate Python developer with 5+ years of experience building scalable web applications, implementing machine learning solutions, and creating data-driven insights.</p>
+                                <div class="contact-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">📍</span>
+                                        <span>San Francisco, CA</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">🎓</span>
+                                        <span>UC Berkeley - CS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card card-3d" data-tilt>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="specialties-icon">⚡</div>
+                                <h3>Specialties</h3>
+                                <p>Core expertise areas</p>
+                            </div>
+                            <div class="card-back">
+                                <h3>Specializations</h3>
+                                <div class="specialty-list">
+                                    <div class="specialty-item">Machine Learning</div>
+                                    <div class="specialty-item">Web Scraping</div>
+                                    <div class="specialty-item">Data Analysis</div>
+                                    <div class="specialty-item">API Development</div>
+                                    <div class="specialty-item">Cloud Deployment</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card card-3d" data-tilt>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="experience-icon">🏆</div>
+                                <h3>Experience</h3>
+                                <p>Professional journey</p>
+                            </div>
+                            <div class="card-back">
+                                <h3>5+ Years</h3>
+                                <div class="experience-highlights">
+                                    <div class="highlight">10M+ users served</div>
+                                    <div class="highlight">40% performance improvement</div>
+                                    <div class="highlight">95% code coverage</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="machine_learning">ML</button>
+                    <button class="filter-btn" data-filter="web_development">Web</button>
+                    <button class="filter-btn" data-filter="automation">Automation</button>
+                    <button class="filter-btn" data-filter="computer_vision">CV</button>
+                </div>
+                
+                <div class="projects-carousel" id="projects-carousel">
+                    <div class="project-card" data-category="machine_learning">
+                        <div class="project-3d-scene">
+                            <div class="neural-network">
+                                <div class="neural-node"></div>
+                                <div class="neural-node"></div>
+                                <div class="neural-node"></div>
+                                <div class="neural-connection"></div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AI-Powered Stock Analyzer</h3>
+                            <p>Machine learning application that predicts stock prices using LSTM networks and technical indicators</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Flask</span>
+                            </div>
+                            <div class="project-features">
+                                <div class="feature">Real-time data processing</div>
+                                <div class="feature">95% prediction accuracy</div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/example/stock-analyzer" target="_blank" class="project-link">GitHub</a>
+                                <a href="https://stock-analyzer-demo.com" target="_blank" class="project-link">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="web_development">
+                        <div class="project-3d-scene">
+                            <div class="web-visualization">
+                                <div class="server-cube"></div>
+                                <div class="database-cylinder"></div>
+                                <div class="api-connections"></div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Analytics Dashboard</h3>
+                            <p>Comprehensive dashboard for analyzing e-commerce performance with real-time data visualization</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                            <div class="project-features">
+                                <div class="feature">Real-time analytics</div>
+                                <div class="feature">Custom KPI tracking</div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/example/ecommerce-dashboard" target="_blank" class="project-link">GitHub</a>
+                                <a href="https://ecommerce-dashboard-demo.com" target="_blank" class="project-link">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="automation">
+                        <div class="project-3d-scene">
+                            <div class="scraper-visualization">
+                                <div class="web-grid"></div>
+                                <div class="data-flow"></div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Smart Web Scraper Suite</h3>
+                            <p>Intelligent web scraping framework with anti-detection capabilities and data pipeline automation</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scrapy</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                            <div class="project-features">
+                                <div class="feature">Anti-detection systems</div>
+                                <div class="feature">Parallel processing</div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/example/smart-scraper" target="_blank" class="project-link">GitHub</a>
+                                <a href="https://scraper-demo.com" target="_blank" class="project-link">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="computer_vision">
+                        <div class="project-3d-scene">
+                            <div class="cv-visualization">
+                                <div class="camera-model"></div>
+                                <div class="detection-grid"></div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Computer Vision Quality Inspector</h3>
+                            <p>Deep learning system for automated quality control in manufacturing using computer vision</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">PyTorch</span>
+                            </div>
+                            <div class="project-features">
+                                <div class="feature">99.5% accuracy</div>
+                                <div class="feature">Real-time processing</div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/example/cv-inspector" target="_blank" class="project-link">GitHub</a>
+                                <a href="https://cv-inspector-demo.com" target="_blank" class="project-link">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" id="prevBtn">‹</button>
+                    <button class="carousel-btn next-btn" id="nextBtn">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-orb-container">
+                            <div class="skill-orb" data-skill="Python">
+                                <div class="orb-inner">Python</div>
+                                <div class="skill-level" style="--level: 95%"></div>
+                            </div>
+                            <div class="skill-orb" data-skill="JavaScript">
+                                <div class="orb-inner">JS</div>
+                                <div class="skill-level" style="--level: 85%"></div>
+                            </div>
+                            <div class="skill-orb" data-skill="SQL">
+                                <div class="orb-inner">SQL</div>
+                                <div class="skill-level" style="--level: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
+                        <div class="skill-orb-container">
+                            <div class="skill-orb" data-skill="Django">
+                                <div class="orb-inner">Django</div>
+                                <div class="skill-level" style="--level: 92%"></div>
+                            </div>
+                            <div class="skill-orb" data-skill="Flask">
+                                <div class="orb-inner">Flask</div>
+                                <div class="skill-level" style="--level: 88%"></div>
+                            </div>
+                            <div class="skill-orb" data-skill="FastAPI">
+                                <div class="orb-inner">FastAPI</div>
+                                <div class="skill-level" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Libraries</h3>
+                        <div class="skill-orb-container">
+                            <div class="skill-orb" data-skill="TensorFlow">
+                                <div class="orb-inner">TF</div>
+                                <div class="skill-level" style="--level: 80%"></div>
+                            </div>
+                            <div class="skill-orb" data-skill="Pandas">
+                                <div class="orb-inner">Pandas</div>
+                                <div class="skill-level" style="--level: 95%"></div>
+                            </div>
+                            <div class="skill-orb" data-skill="OpenCV">
+                                <div class="orb-inner">CV</div>
+                                <div class="skill-level" style="--level: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-tree">
+                    <div class="tree-node main-node">
+                        <div class="node-content">Python Development</div>
+                        <div class="connection-line"></div>
+                    </div>
+                    <div class="tree-branches">
+                        <div class="branch-node">
+                            <div class="node-content">Web Development</div>
+                        </div>
+                        <div class="branch-node">
+                            <div class="node-content">Machine Learning</div>
+                        </div>
+                        <div class="branch-node">
+                            <div class="node-content">Data Science</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="timeline-3d">
+                    <div class="timeline-item" data-year="2022">
+                        <div class="timeline-marker">
+                            <div class="marker-inner"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="company-logo">TC</div>
+                            <h3>Senior Python Developer</h3>
+                            <h4>TechCorp Solutions</h4>
+                            <p class="period">2022 - Present</p>
+                            <ul class="achievements">
+                                <li>Led development of ML-powered analytics platform serving 10M+ users</li>
+                                <li>Reduced system latency by 40% through optimization and caching strategies</li>
+                                <li>Mentored junior developers and established code review processes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2020">
+                        <div class="timeline-marker">
+                            <div class="marker-inner"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="company-logo">DF</div>
+                            <h3>Python Developer</h3>
+                            <h4>DataFlow Analytics</h4>
+                            <p class="period">2020 - 2022</p>
+                            <ul class="achievements">
+                                <li>Built real-time data processing pipelines handling 1TB+ daily</li>
+                                <li>Implemented automated testing increasing code coverage to 95%</li>
+                                <li>Developed RESTful APIs used by 50+ client applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2019">
+                        <div class="timeline-marker">
+                            <div class="marker-inner"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="company-logo">SX</div>
+                            <h3>Junior Python Developer</h3>
+                            <h4>StartupXYZ</h4>
+                            <p class="period">2019 - 2020</p>
+                            <ul class="achievements">
+                                <li>Developed core features for social media analytics platform</li>
+                                <li>Implemented web scraping solutions for competitive analysis</li>
+                                <li>Contributed to 300% improvement in data collection efficiency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon email-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:alex.chen@example.com">alex.chen@example.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon phone-icon">📱</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links-3d">
+                            <a href="https://github.com/alexchen" target="_blank" class="social-link github">
+                                <div class="social-icon">⚡</div>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/alexchen" target="_blank" class="social-link linkedin">
+                                <div class="social-icon">💼</div>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://twitter.com/alexchen_dev" target="_blank" class="social-link twitter">
+                                <div class="social-icon">🐦</div>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form-3d" id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary contact-submit">
+                                <span class="btn-text">Send Message</span>
+                                <div class="btn-particles"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
