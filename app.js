@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Typing Animation for Hero Section
     const typingText = document.querySelector('.typing-text');
-    const roles = ['Python Developer', 'Full-Stack Developer', 'Software Engineer', 'Problem Solver'];
+    const roles = ['Python Developer'];
     let currentRoleIndex = 0;
     let currentCharIndex = 0;
     let isDeleting = false;
